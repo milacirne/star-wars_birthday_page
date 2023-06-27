@@ -1,0 +1,31 @@
+@use 'buttons';
+@use 'variables';
+@use 'hero';
+@use 'event';
+@use 'footer';
+
+@font-face {
+    font-family: Starjout;
+    src: url(../../assets/fonts/Starjout.ttf);
+    font-weight: 400;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 5px;
+    list-style: none;
+    background-color: variables.$backgroundColor;
+    color: variables.$textColor;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+
+    @media only screen and (max-width: 1024px) {
+        max-width: 80%;
+    }
+}
